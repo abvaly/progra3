@@ -23,11 +23,13 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 
+
+
 /**
  *
  * @author Alvaro
  */
-public class Formulario_paciente_nuevo extends JFrame implements ActionListener {
+public class Formulario_paciente_nuevo extends JPanel implements ActionListener {
     
     private JLabel texto0;
     private JLabel texto1;
@@ -56,6 +58,8 @@ public class Formulario_paciente_nuevo extends JFrame implements ActionListener 
     private FileReader leer;
     private BufferedReader leerLinea;
     
+    
+    
     public Formulario_paciente_nuevo() {
         super();
         configurarFormulario_paciente_nuevo();
@@ -64,12 +68,12 @@ public class Formulario_paciente_nuevo extends JFrame implements ActionListener 
     }
 
     private void configurarFormulario_paciente_nuevo() {
-        this.setTitle("Creando paciente nuevo");
+//        this.setTitle("Creando paciente nuevo");
         this.setSize(900, 600);
-        this.setLocationRelativeTo(null);
+//        this.setLocationRelativeTo(null);
         this.setLayout(null);
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        this.setResizable(false);
+//        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
     private void inicializarComponentes() {
@@ -87,6 +91,7 @@ public class Formulario_paciente_nuevo extends JFrame implements ActionListener 
         caja4 = new JTextField();
         caja5 = new JTextField();
         caja6 = new JTextField();
+        
         btnCrear = new JButton();
         lblTemporal = new JLabel();
         btnMostrar = new JButton();  //Agregando nuevo boton
@@ -116,6 +121,7 @@ public class Formulario_paciente_nuevo extends JFrame implements ActionListener 
         texto6.setBounds(30, 270, 500, 25);
         caja6.setBounds(230, 270, 500, 25);
         texto7.setBounds(30, 310, 500, 25);
+        
         
         
         btnCrear.setText("Crear paciente");
@@ -192,5 +198,7 @@ public class Formulario_paciente_nuevo extends JFrame implements ActionListener 
           
         }
     }
+    
+    
 }
     

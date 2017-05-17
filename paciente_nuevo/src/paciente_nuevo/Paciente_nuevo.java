@@ -19,5 +19,10 @@ public class Paciente_nuevo {
         Formulario_paciente_nuevo f1 = new Formulario_paciente_nuevo();
        f1.setVisible(true);
     }
+//      public static void main(String[] ar) {
+//        jcombobox formulario1=new jcombobox();
+//        formulario1.setBounds(0,0,200,150);
+//        formulario1.setVisible(true);
+//      }
     
 }
